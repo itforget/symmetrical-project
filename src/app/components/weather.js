@@ -28,8 +28,8 @@ const Clima= () => {
     fetchData();
  }, []);
 
- if (loading) return <p>Loading...</p>;
- if (error) return <p>Error: {error}</p>;
+ if (loading) return <p className=' font-extrabold text-4xl'>Loading...</p>;
+ if (error) return <p className=' font-extrabold text-4xl'>Error: {error}</p>;
 
  const ColorTemp = () => {
    const temperature = data.main.temp;
