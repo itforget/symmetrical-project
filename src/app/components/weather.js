@@ -45,7 +45,7 @@ const Clima= () => {
     <div className='border-blue-400 flex flex-col p-10 border-2 place-content-center mx-72 rounded-3xl text-gray-300'>
       <h1 className='flex place-content-center font-extrabold text-2xl'>Temperatura atual em {data.name}</h1>
       <ul className='flex flex-col gap-5 place-content-center mt-10 content-center p-10 items-center'>
-         <li className={`text-xl font-bold ${ColorTemp()}`}>Temperatura: {data.main.temp}°C</li>
+         <li className={`text-xl font-bolder ${ColorTemp()}`}>Temperatura: {data.main.temp}°C</li>
          <li className='text-xl'>Umidade: {data.main.humidity}%</li>
          <li className='text-xl'>Pressão atmosférica: {data.main.pressure}hPa</li>
          <li><img className=' flex place-content-center' src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} width={100} height={100} alt={data.weather[0].description} /></li>
